@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <meta name="viewport"  >
     <title> Three Star Media</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
    <header>
       <nav>
         <div class="container">
-         <img src="images/logo.png" alt="three star media">
+         <div class="logo">
+          <img src="images/logo.png" alt="three star media">
         </div>
-     </nav>
-     <div class="header-welcome">
-         <div class="container">
+     
         <ul>
-            <li a href="#">Home</li>
-            <li a href="#">About us</li>
-            <li a href="#">Service</li>
-            <li a href="#">Team</li>
-            <li a href="#">Contact</li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
         <form>
-            <input type="search">
-            <button>&#128269;</button>
+            <input type="search" class="input-search" placeholder="Search">
+            <button class="header-button">&#128269;</button>
         </form>   
+
     </div><!--end container-->
+    </nav>
+    
     <div class="header-welcome">
         <div class="container">
             <h1>Welcome to Three Star Media</h1>
@@ -42,50 +48,62 @@
     <section class="section-about">
         <div class="container">
             <!--image on the left and heading and paragraph on the right using flexbox-->
-            <image src="images/about-us.jpg" alt="about us"></image>
+            <image src="images/about-us.jpg" alt="about us" ></image>
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
 
         </div><!-- end container-->
     </section><!-- end section-about -->
 
     <section class="section-service">
-        <div class="container">
+        <div class="container-1">
             <!-- H2 heading ,five div's each with h3,images and button on grid-->
             <h2>Our Services</h2>
          <div class="service-top">
             
-            <image src="images/digital.jpg" alt="digital transformation ">
+            <image src="images/digital.jpg" alt="digital transformation " style="width:95.5%;margin-left:15px;margin-right:15px;">
             </image>
+            <div class="container">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
             <button>Digital Plans ▶</button>
-
-            <image src="images/marketing.jpg" alt="marketing plans  ">
+    </div>
+       
+            <image src="images/marketing.jpg" alt="marketing plans  " style="width:95.5%;margin-left:15px;margin-right:15px;">
             </image>
+            <div class="container">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
             <button>Marketing Plans ▶</button>
+            </div>
         </div>
-        <div class="service-bottom">
+     <div class="service-bottom">
             
-            <image src="images/video.jpg" alt="viedo production ">
+            <image src="images/video.jpg" alt="viedo production " style="width:95.5%;margin-left:15px;margin-right:15px;">
             </image>
+            <div class="container">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
             <button>Video Plans ▶</button>
-
-            <image src="images/web.jpg" alt="web development  ">
+            </div>
+       
+            <image src="images/web.jpg" alt="web development  " style="width:95.5%;margin-left:15px;margin-right:15px;">
             </image>
+            <div class="container">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
             <button>Web Plans ▶</button>
-
-            <image src="images/print.jpg" alt="print">
+            </div>
+       
+            <image src="images/print.jpg" alt="print" style="width:95.5%;margin-left:15px;margin-right:15px;">
             </image>
+            <div class="container">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
             <button>Print Plans ▶</button>
+            </div>
         </div>
 
       </div>
@@ -95,7 +113,7 @@
         <div class="container">
             <!--h3 paragraph and button-->
             <h3>Our Vision </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
             <button>Learn More ▶</button>
         </div>
     </section>
@@ -104,14 +122,18 @@
         <div class="container">
             <!-- h2 two divs with images,two div's with h2,h3 paragraph-->
             <h2>Our Team</h2>
+           
+           
+            <img src="images/john.jpg" style="width:100%;">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit vol</p>
-            <img src="images/john.jpg">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+       
+            <img src="images/bob.jpg" style="width:100%; ">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit vol</p>
-            <img src="images/bob.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
                
         </div>
     </section>
@@ -120,23 +142,22 @@
         <div class="container">
             <!-- h2,h3 form  google maps table on a Grid-->
             <h2>Contact Us</h2>
+            <div class="message">
             <h3>Send us a message</h3>
-            <form>
-                <label for="full name">Full Name</label>
-                <input type="text" id="full name" name="full name" required>
+            <form >
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full name" name="full-name" required class="input-name">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required class="input-email">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required rows="10" cols="20"></textarea>
+                <textarea id="message" name="message" required  class="input-textarea"></textarea>
              <section class="send">
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" class="submit-button">
             </section>
             </form>
         </div>
-
-        <h3>Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.991336547881!2d-75.7594631492966!3d45.3489871490429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669221316644!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+        </div>
+        <div class="timetable">
         <h3>Hours of operation</h3>
         <table>
             <thead>
@@ -156,6 +177,12 @@
                 </tbody>
             </thead>
         </table>
+    </div>
+    <div class="location">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.991336547881!2d-75.7594631492966!3d45.3489871490429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669221316644!5m2!1sen!2sca" width="760" height="550" style="border:0;padding-left:20px;padding-bottom:20px;margin-right:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        
 
     </section>
 
@@ -166,9 +193,9 @@
         © Copyright Three Star Media, 2020
     </p>
     <p>
-        All images are taken from Unsplash
+        All images are taken from <a href="">Unsplash</a>
     </p>
-   </div>
+  </div>
   </footer>
 </body>
 </html>
